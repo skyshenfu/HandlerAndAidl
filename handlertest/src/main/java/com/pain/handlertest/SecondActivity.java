@@ -29,12 +29,12 @@ public class SecondActivity extends AppCompatActivity {
         public void handleMessage(Message msg) {
             SecondActivity activity= (SecondActivity) reference.get();
             if (activity!=null){
-                activity.buttonNext.setText(msg.what);
+                switch (msg.what){
+                    case 65536:
+                        Toast.makeText(activity, "用这种方式避免内存泄漏", Toast.LENGTH_SHORT).show();
+                        break;
             }
-            switch (msg.what){
-                case 65536:
-                    Toast.makeText(activity, "用这种方式避免内存泄漏", Toast.LENGTH_SHORT).show();
-                    break;
+
             }
         }
     }
