@@ -1,4 +1,4 @@
-package com.pain.aidl;
+package com.pain.aidlclient;
 
 import android.os.Parcel;
 import android.os.Parcelable;

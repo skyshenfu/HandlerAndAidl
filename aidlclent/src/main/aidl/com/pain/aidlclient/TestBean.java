@@ -1,7 +1,8 @@
-package com.pain.aidl;
+package com.pain.aidlclient;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.util.Log;
 
 /**
  * Created by zty
@@ -59,6 +60,7 @@ public class TestBean implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(name);
         dest.writeInt(age);
+        Log.e("writeToParcel: ","1111" );
     }
     public void readFromParcel(Parcel dest) {
         //注意，此处的读值顺序应当是和writeToParcel()方法中一致的

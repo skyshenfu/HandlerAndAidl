@@ -1,6 +1,6 @@
 // TestBeanManager.com.pain.aidl
-package com.pain.aidl;
-import com.pain.aidl.TestBean;
+package com.pain.aidlclient;
+import com.pain.aidlclient.TestBean;
 
 // Declare any non-default types here with import statements
 

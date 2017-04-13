@@ -1,8 +1,7 @@
 package com.pain.aidlclient;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import com.pain.aidlclient.R;
+import android.support.v7.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,1 +1,1 @@
-include ':app', ':messengerdoubleclient', ':messengerdoubleserver', ':handlertest'
+include ':app', ':messengerdoubleclient', ':messengerdoubleserver', ':handlertest', ':aidlserver', ':aidlclent'

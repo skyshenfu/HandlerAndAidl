@@ -7,7 +7,8 @@ import android.os.RemoteException;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
-import com.pain.aidl.TestBean;
+import com.pain.aidlclient.TestBean;
+import com.pain.aidlclient.TestBeanManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,12 +36,14 @@ public class AIDLService extends Service {
         @Override
         public void addBean(TestBean testBean) throws RemoteException {
             synchronized (this){
+
                 if (mBeans==null){
                     mBeans=new ArrayList<>();
                 }
                 if (testBean==null){
                     testBean=new TestBean();
                 }
+                Log.e(TAG, testBean.toString());
                 testBean.setName("123 one punch");
                 if (!mBeans.contains(testBean)){
                     mBeans.add(testBean);

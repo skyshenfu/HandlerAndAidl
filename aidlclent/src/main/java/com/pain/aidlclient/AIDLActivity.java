@@ -12,8 +12,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
 import com.pain.aidlclient.TestBeanManager;
-import com.pain.aidlclient.R;
 
 import java.util.List;
 
@@ -66,8 +66,8 @@ public class AIDLActivity extends AppCompatActivity {
         if (testBeanManager == null) return;
 
         TestBean testBean = new TestBean();
-        testBean.setName("APP研发录In");
-        testBean.setAge(30);
+        testBean.setName("zty123");
+        testBean.setAge(300);
         try {
             testBeanManager.addBean(testBean);
             Log.e(getLocalClassName(), testBean.toString());

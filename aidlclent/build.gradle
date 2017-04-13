@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        applicationId "com.pain.com.pain.aidlclient"
+        applicationId "com.pain.aidlclent"
         minSdkVersion 19
         targetSdkVersion 25
         versionCode 1
